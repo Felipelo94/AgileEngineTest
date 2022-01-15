@@ -1,0 +1,5 @@
+:::: Log File ::::
+[15/1/2022 -- 11:24]  Info task started
+[15/1/2022 -- 11:24]  Mustache Templates ran on the HTML files
+[15/1/2022 -- 11:24]  Scripts ran on main.js
+[15/1/2022 -- 11:24]  Sass ran on files
