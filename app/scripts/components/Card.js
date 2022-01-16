@@ -1,5 +1,4 @@
 import React from "react";
-import Card from "./Card.scss";
 
 function Card({ img, description, title, price, tags }) {
   return (
