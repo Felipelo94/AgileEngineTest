@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import data from "../../../server/data";
+import { ProductsContext } from "../ProductsContext";
 
 function Menu() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+
+  const { products, setProducts } = useContext(ProductsContext);
 
   /**
    * Shows or hides the search container
@@ -18,7 +22,16 @@ function Menu() {
    * @memberof Menu
    * @param e [Object] - the event from a text change handler
    */
-  const onSearch = (e) => {};
+  const onSearch = (e) => {
+    if (e.target.value === "") {
+      setProducts(data);
+    } else {
+      let filteredProducts = products.filter((product) =>
+        product.name.toLowerCase().includes(e.target.value.toLowerCase())
+      );
+      setProducts(filteredProducts);
+    }
+  };
 
   return (
     <div>

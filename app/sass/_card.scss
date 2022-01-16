@@ -1,5 +1,5 @@
 /*   color variables */
-$clr-primary: #d50000;
+$clr-primary: #040a2b;
 $clr-primary-hover: #29e6a7;
 $clr-primary-dark: #039d69;
 $clr-gray100: #f9fbff;
@@ -36,6 +36,7 @@ body {
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
+  color: #000;
 
   &__image {
     height: 12rem;
@@ -49,6 +50,7 @@ body {
 
   &__description {
     padding: 0 1rem;
+    color: $clr-gray400;
   }
 
   &__btn {
@@ -62,6 +64,14 @@ body {
     color: $clr-primary;
     border-radius: $radius;
     transition: background 200ms ease-in, color 200ms ease-in;
+    cursor: pointer;
+  }
+  &__price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding-top: 1rem;
   }
 
   &:hover {

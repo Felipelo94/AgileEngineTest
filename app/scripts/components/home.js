@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from "react";
-import data from "../../../server/data";
+import React, { useContext, useEffect, useState } from "react";
+import { ProductsContext } from "../ProductsContext";
 import Card from "./Card";
 
 function home() {
-  const [products, setProducts] = useState();
-
-  useEffect(() => {
-    setProducts(data);
-  }, []);
+  const { products } = useContext(ProductsContext);
 
   return (
     <div>
@@ -15,8 +11,9 @@ function home() {
         <div className="content">
           <div className="wrapper">
             {products &&
-              products.map((product) => (
+              products.map((product, idx) => (
                 <Card
+                  key={idx}
                   img={product.picture}
                   title={product.name}
                   description={product.about}
