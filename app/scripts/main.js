@@ -24,9 +24,11 @@ import { ProductsContext } from "./ProductsContext";
  * We can start our initial App here in the main.js file
  */
 function App() {
-  const [products, setProducts] = useState(data);
+  const [products, setProducts] = useState();
 
   const value = { products, setProducts };
+
+  useEffect(() => setProducts(data), []);
 
   return (
     <div className="App">

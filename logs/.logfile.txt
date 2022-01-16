@@ -107,3 +107,4 @@
 [16/1/2022 -- 18:17]  Sass ran on files
 [16/1/2022 -- 18:18]  Sass ran on files
 [16/1/2022 -- 18:18]  Sass ran on files
+[16/1/2022 -- 18:52]  Scripts ran on main.js
