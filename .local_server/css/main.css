@@ -1,4 +1,7 @@
-/** This is the main stylesheet for the sass compiler, all imports should stem from this initial page. It contains the universal styles of the site, the imports and various other items. */
+/**
+* This is the main stylesheet for the sass compiler, all imports should stem from this initial page.
+* It contains the universal styles of the site, the imports and various other items.
+*/
 /** The menu is technically the header of the site, it contains the styles for the drop down of the Search Bar. */
 header.menu { width: 100%; position: relative; z-index: 10; }
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Menu() {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
@@ -49,19 +49,15 @@ function Menu() {
                 INSPIRATION
               </a>
 
-              <a href="#" onClick={(e) => this.showSearchContainer(e)}>
+              <a href="#" onClick={(e) => showSearchContainer(e)}>
                 <i className="material-icons search">search</i>
               </a>
             </nav>
           </div>
         </div>
-        <div
-          className={
-            (this.state.showingSearch ? "showing " : "") + "search-container"
-          }
-        >
-          <input type="text" onChange={(e) => this.onSearch(e)} />
-          <a href="#" onClick={(e) => this.showSearchContainer(e)}>
+        <div className={(isSearchOpen ? "showing " : "") + "search-container"}>
+          <input type="text" onChange={(e) => onSearch(e)} />
+          <a href="#" onClick={(e) => showSearchContainer(e)}>
             <i className="material-icons close">close</i>
           </a>
         </div>

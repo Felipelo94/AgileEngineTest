@@ -3,3 +3,11 @@
 [15/1/2022 -- 11:24]  Mustache Templates ran on the HTML files
 [15/1/2022 -- 11:24]  Scripts ran on main.js
 [15/1/2022 -- 11:24]  Sass ran on files
+[16/1/2022 -- 16:9]  Info task started
+[16/1/2022 -- 16:9]  Mustache Templates ran on the HTML files
+[16/1/2022 -- 16:9]  Scripts ran on main.js
+[16/1/2022 -- 16:9]  Sass ran on files
+[16/1/2022 -- 16:10]  Scripts ran on main.js
+[16/1/2022 -- 16:11]  Scripts ran on main.js
+[16/1/2022 -- 16:12]  Scripts ran on main.js
+[16/1/2022 -- 16:14]  Scripts ran on main.js
