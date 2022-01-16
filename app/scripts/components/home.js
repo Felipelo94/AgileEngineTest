@@ -1,30 +1,15 @@
-/**
- * This file will hold the Main content that lives in the main body of the site
- * 
- */
-import React from 'react';
+import React from "react";
 
-
-class Home extends React.Component {
-
-    /**
-     * Renders the default app in the window, we have assigned this to an element called root.
-     * 
-     * @returns JSX
-     * @memberof Home
-    */
-    render() {
-        return (
-            <section id="home">
-                <div className="content">
-                    <p>ELC Coding Test...</p>
-                </div>
-            </section>
-        );
-    }
-
-
+function home() {
+  return (
+    <div>
+      <section id="home">
+        <div className="content">
+          <p>ELC Coding Test...</p>
+        </div>
+      </section>
+    </div>
+  );
 }
 
-// Export out the React Component
-module.exports = Home;
+export default home;
